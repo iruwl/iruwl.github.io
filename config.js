@@ -22,6 +22,18 @@ module.exports = {
     }, {
       label: 'Label',
       path: '/label'
+    }, {
+      label: 'Alat Tempur',
+      // jika pada file markdown di content/pages tidak dituliskan parameter slug
+      // makan path default untuk pages adalah /pages/file-markdown
+      // jika parameter slug dituliskan maka path di sini harus disesuaikan
+      // dengan nilai dari parameter slug pada file markdown di content/pages
+      // path: '/pages/alat-tempur'
+      path: '/alat-tempur'
+    }, {
+      label: 'Kentang',
+      // path: '/pages/kentang'
+      path: '/kentang'
     }
   ],
   author: {
