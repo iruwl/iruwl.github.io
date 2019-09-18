@@ -1,4 +1,4 @@
-/** 
+/**
  * Generic
  */
 html {
@@ -166,4 +166,29 @@ figcaption {
     float: left;
   }
 
+}
+
+table {
+  font-size: $typographic-small-font-size;
+  border: solid $color-gray-border 1px;
+  border-collapse: collapse;
+  & tr {
+    &:nth-child(even) {
+        background-color: $color-table-tbody;
+    }
+  }
+  & th {
+    color: white;
+    background-color: $color-table-thead;
+    min-width: 80px;
+  }
+  & td {
+    border: solid $color-gray-border 1px;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  & img {
+    width: 15px;
+    height: 15px;
+  }
 }
