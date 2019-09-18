@@ -48,14 +48,14 @@ module.exports = {
     bio: 'Seorang suami, ayah dari bocil-bocil; suka bermalas-malasan di depan laptop sambil ditemenin kopi sama pisang goreng (kalo lagi ada)',
     contacts: {
       email: '',
-      facebook: '#',
-      telegram: '#',
+      facebook: '',
+      telegram: '',
       twitter: 'aka_irul',
       github: 'iruwl',
       rss: publicUrl + '/rss.xml',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: '',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: ''
