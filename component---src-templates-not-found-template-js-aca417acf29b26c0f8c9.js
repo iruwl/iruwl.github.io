@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{233:function(e,t,a){"use strict";a.r(t);var n=a(0),l=a.n(n),i=a(228),c=a(227),r=a(229),u=a(63);t.default=function(){var e=Object(u.c)(),t=e.title,a=e.subtitle;return l.a.createElement(c.a,{title:"404 - "+t,description:a},l.a.createElement(i.a,null),l.a.createElement(r.a,{title:"404"},l.a.createElement("p",null,"Halaman tidak ditemukan.")))}}}]);
+//# sourceMappingURL=component---src-templates-not-found-template-js-aca417acf29b26c0f8c9.js.map

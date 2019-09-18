@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Catetan iRul]]></title><description><![CDATA[Dump and die developer. Was born in legacy code.]]></description><link>https://iruwl.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Sep 2019 06:22:26 GMT</lastBuildDate><item><title><![CDATA[Linus Torvalds]]></title><description><![CDATA[Rekayasawan perangkat lunak Finlandia yang dikenal sebagai perintis pengembangan Kernel Linux. Ia sekarang bertindak sebagai koordinator proyek tersebut.]]></description><link>https://iruwl.github.io/catetan/linus-torvalds/</link><guid isPermaLink="false">https://iruwl.github.io/catetan/linus-torvalds/</guid><pubDate>Sun, 15 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Linus Benedict Torvalds&lt;/strong&gt; (lahir di Helsinki, Finlandia, 28 Desember 1969; umur 49 tahun) adalah rekayasawan perangkat lunak Finlandia yang dikenal sebagai perintis pengembangan Kernel Linux. Ia sekarang bertindak sebagai koordinator proyek tersebut.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c68f16da649390637130ea99745f87e6/ce471/Linus_Torvalds.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 139.17948717948715%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgH/xAAXAQEBAQEAAAAAAAAAAAAAAAABAgAD/9oADAMBAAIQAxAAAAFWHIjps6MpnSJQTGP/xAAbEAABBQEBAAAAAAAAAAAAAAACAAEDESETIP/aAAgBAQABBQKrUlgm1kWsDUPfSktNMXj/xAAWEQEBAQAAAAAAAAAAAAAAAAAQESH/2gAIAQMBAT8BmFP/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwEh/8QAGBAAAwEBAAAAAAAAAAAAAAAAAREgECH/2gAIAQEABj8CQxxwV//EAB0QAQADAAEFAAAAAAAAAAAAAAEAESFBIFFhcYH/2gAIAQEAAT8hsuRg0u4whK934mpttxuV5EHA7sU0EEVj86P/2gAMAwEAAgADAAAAEFQ+f//EABcRAQEBAQAAAAAAAAAAAAAAABEBABD/2gAIAQMBAT8QkcMM3f/EABgRAAMBAQAAAAAAAAAAAAAAAAABERAh/9oACAECAQE/EG+5BD//xAAcEAEAAgMAAwAAAAAAAAAAAAABABEhMUFRYYH/2gAIAQEAAT8QDaDo8PMDBX2yaSWVwvoFmLqYGQMVtt2yupueT5KYT2mD5B6HMW5R1GGp/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/c68f16da649390637130ea99745f87e6/01472/Linus_Torvalds.webp 240w,
+/static/c68f16da649390637130ea99745f87e6/222bd/Linus_Torvalds.webp 480w,
+/static/c68f16da649390637130ea99745f87e6/620b9/Linus_Torvalds.webp 960w,
+/static/c68f16da649390637130ea99745f87e6/97fd0/Linus_Torvalds.webp 975w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/c68f16da649390637130ea99745f87e6/3bc27/Linus_Torvalds.jpg 240w,
+/static/c68f16da649390637130ea99745f87e6/98431/Linus_Torvalds.jpg 480w,
+/static/c68f16da649390637130ea99745f87e6/b3ee8/Linus_Torvalds.jpg 960w,
+/static/c68f16da649390637130ea99745f87e6/ce471/Linus_Torvalds.jpg 975w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/c68f16da649390637130ea99745f87e6/b3ee8/Linus_Torvalds.jpg&quot;
+          alt=&quot;Linus_Torvalds.jpg&quot;
+          title=&quot;Linus_Torvalds.jpg&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Linux terinsipirasi oleh Minix (sistem operasi yang dikembangkan oleh Andrew S. Tanenbaum) untuk mengembangkan sistem operasi mirip-Unix (Unix-like) yang dapat dijalankan pada sebuah PC. Linux sekarang dapat dijalankan pada berbagai arsitektur lain.&lt;/p&gt;
+&lt;p&gt;Ketika Linus Torvalds, seorang mahasiswa Finlandia pendiam membagi-bagikan kode sumber (source code) kernel Linux seukuran disket via internet pada tahun 1991, ia sama sekali tidak menduga bahwa apa yang dimulainya melahirkan sebuah bisnis bernilai miliaran dolar di kemudian hari.&lt;/p&gt;
+&lt;p&gt;Ia bahkan tidak menduga Linux kemudian menjadi sistem operasi paling menjanjikan, yang bisa dibenamkan ke dalam server, komputer desktop, tablet PC, PDA, handphone, GPS, robot, mobil hingga pesawat ulang alik buatan NASA.&lt;/p&gt;
+&lt;p&gt;Tidak hanya itu, banyak maniak Linux (Linuxer) yang membeli perangkat buatan Apple dan mengganti sistem operasinya dengan Linux. Bagi saya itu sedikit gila, mengingat menghapus sistem operasi Mac &amp;#x26; iPod berarti membuang duit dan menggantinya sistem operasinya cukup sulit dibanding desktop berbasis Windows. Saat ini 20% pangsa pasar desktop di seluruh dunia menggunakan Linux jauh di atas Mac OS dan terus mengejar OS Windows. Dan 12,7% server di seluruh dunia menggunakan Linux, jauh di atas UNIX, BSD, Solaris, dan terus meningkat menggerus pangsa pasar server Microsoft.&lt;/p&gt;
+&lt;p&gt;Saat ini Linus meninggalkan posisi menjanjikan di perusahaan semi konduktor Transmeta dan tinggal bersama istri dan 3 anaknya di sebuah bukit di desa di Portland, Oregon, USA, berdekatan dengan markas Open Source Development Labs. Organisasi nirlaba ini diawaki oleh 20-an programmer yang punya gairah hampir sama dengan Linus. Mereka terus mengembangkan kernel Linux yang kini berukuran 290-an MegaBytes atau melebihi 9 miliar baris kode. Linux beserta timnya menerima masukan baris-baris kode dari seluruh penjuru dunia, menyortir, menetapkan skala prioritas dan memasukkan gagasan paling brilian ke dalam kernel. LSD sendiri disokong oleh puluhan raksasa IT seperti IBM, HP, Dell dan Sun, baik dari sisi materi maupun sumber daya manusia.&lt;/p&gt;
+&lt;p&gt;Linus bukan orang pertama yang membagi-bagikan source code karena pola ini adalah hal yang biasa pada masa awal tumbuhnya industri komputer. Tapi Linus sukses menetapkan standar yang memaksa banyak pengembang ikut membebaskan kode sumber program mereka, mulai dari BSD, Solaris, Suse, Java hingga Adobe.&lt;/p&gt;
+&lt;p&gt;Meski hanya bergaji ratusan ribu dolar pertahun, Linus telah menciptakan banyak multimilyuner dalam industri komputer mulai dari RedHat, Suse, Debian, Mandriva, Ubuntu dan banyak developer software open source lainnya. Hampir tak ada yang berubah dari Linus. Ketika ia datang terlambat di suatu konferensi IT, ia bahkan tak segan-segan duduk di lantai dengan celana pendek dan sepatu-sandal kesukaannya. Ia bahkan tidak marah tatkala memberikan pidato di mimbar dan diinterupsi oleh beberapa programmer BSD yang maju ke depan panggung yang mengklaim bahwa kernel BSD jauh lebih hebat ketimbang kernel Linux. Ia bahkan tidak segan-segan memakai T-Shirt BSD yang disodorkan pemrotes dan melanjutkan pidatonya.&lt;/p&gt;
+&lt;p&gt;Menurut Linus, apa yang dilakukannya hanyalah untuk berbagi. Berbeda dengan Richard M Stallman yang fanatik dengan konsep free software, Linus hanya menekankan sisi keterbukaan (open), tak peduli apakah kemudian dalam suatu sistem operasi bercampur program free dan proprietery.&lt;/p&gt;
+&lt;p&gt;Setiap kata-kata Linus hampir menjadi sabda di kalangan Linuxer yang menciptakan standar nilai tertentu. Setiap publikasi, pidato, email dab press releasenya selalu ditunggu-tunggu jutaan orang. Di sela kesibukannya, Linus menyempatkan diri bersepeda menuruni bukit dan minum di bar desa. Pada 24 April 2012, Linus terpilih sebagai salah satu dari dua penerima penghargaan Millennium Technology Prize 2012, sebuah penganugerahan sekelas penghargaan Nobel di dunia teknologi.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Disalain dari &lt;a href=&quot;https://id.wikipedia.org/wiki/Linus_Torvalds&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Wikipedia&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Rasmus Lerdorf]]></title><description><![CDATA[Merupakan seorang pemrogram dari Denmark/Greenland dan pencipta bahasa pemrograman PHP.]]></description><link>https://iruwl.github.io/catetan/rasmus-lerdorf/</link><guid isPermaLink="false">https://iruwl.github.io/catetan/rasmus-lerdorf/</guid><pubDate>Sun, 15 Sep 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Rasmus Lerdorf&lt;/strong&gt; (dilahirkan pada tanggal 22 November 1968 di Qeqertarsuaq, Greenland) merupakan seorang pemrogram dari Denmark/Greenland dan pencipta bahasa pemrograman PHP.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 759px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/fea563fb92348f301c8e51fef9c5fa55/a9d97/Rasmus_Lerdorf.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 95.25691699604742%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAUCAQP/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAABl0d5DjLBDw4R1gh//8QAHRAAAgICAwEAAAAAAAAAAAAAAgMAARIhBBEUIv/aAAgBAQABBQLjhRsJIzO539aqeUrmZW1molp2v//EABcRAAMBAAAAAAAAAAAAAAAAAAEQIUH/2gAIAQMBAT8BAixf/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPwFmDn//xAAfEAABAwMFAAAAAAAAAAAAAAAAAREhEjNRAjEyQXH/2gAIAQEABj8CbVsLTGDss0Jljj4hbJUglT//xAAdEAACAgIDAQAAAAAAAAAAAAABEQAxIVFBYXGR/9oACAEBAAE/IQWrasw4MSO36icKNLhGTLRCsQAxuAEwsoyljcEi0+T/2gAMAwEAAgADAAAAEJc4PP/EABgRAQADAQAAAAAAAAAAAAAAAAEAEBFR/9oACAEDAQE/EC0s07Cv/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERMXH/2gAIAQIBAT8Qd2I4NCP/xAAdEAEBAAMAAgMAAAAAAAAAAAABEQAhMUFRcYHR/9oACAEBAAE/EA5YLCQ8XAzXvsj4qYgzA9Q09De79YwcFolfX3mzTFDXILrA8T4ykgQzazuJLBSo/M//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/fea563fb92348f301c8e51fef9c5fa55/01472/Rasmus_Lerdorf.webp 240w,
+/static/fea563fb92348f301c8e51fef9c5fa55/222bd/Rasmus_Lerdorf.webp 480w,
+/static/fea563fb92348f301c8e51fef9c5fa55/42453/Rasmus_Lerdorf.webp 759w&quot;
+          sizes=&quot;(max-width: 759px) 100vw, 759px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/fea563fb92348f301c8e51fef9c5fa55/3bc27/Rasmus_Lerdorf.jpg 240w,
+/static/fea563fb92348f301c8e51fef9c5fa55/98431/Rasmus_Lerdorf.jpg 480w,
+/static/fea563fb92348f301c8e51fef9c5fa55/a9d97/Rasmus_Lerdorf.jpg 759w&quot;
+          sizes=&quot;(max-width: 759px) 100vw, 759px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/fea563fb92348f301c8e51fef9c5fa55/a9d97/Rasmus_Lerdorf.jpg&quot;
+          alt=&quot;Rasmus_Lerdorf.jpg&quot;
+          title=&quot;Rasmus_Lerdorf.jpg&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Rasmus menulis dua versi pertama dari PHP. Rasmus juga berpartisipasi dalam pengembangan versi-versi PHP selanjutnya yang dikembangkan oleh sebuah kelompok pengembang, termasuk di dalamnya Andi Gutmans dan Zeev Suraski yang selanjutnya mendirikan Zend Technologies.&lt;/p&gt;
+&lt;p&gt;Pada tahun 1993 Rasmus lulus dari Universitas Waterloo. Sejak bulan September 2002, dia bekerja di Yahoo! sebagai seorang Insinyur Arsitek Infrastruktur.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Disalain dari &lt;a href=&quot;https://id.wikipedia.org/wiki/Rasmus_Lerdorf&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Wikipedia&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
