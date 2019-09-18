@@ -5,8 +5,8 @@ const publicUrl = 'https://iruwl.github.io';
 module.exports = {
   url: publicUrl,
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Catetan iRul',
+  subtitle: 'Dump and die developer. Was born in legacy code.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -27,9 +27,9 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'iRul',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Seorang suami, ayah dari bocil-bocil; suka bermalas-malasan di depan laptop sambil ditemenin kopi sama pisang goreng (kalo lagi ada)',
     contacts: {
       email: '',
       facebook: '#',
