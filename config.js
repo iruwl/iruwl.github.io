@@ -52,7 +52,7 @@ module.exports = {
       telegram: '#',
       twitter: 'aka_irul',
       github: 'iruwl',
-      rss: '',
+      rss: publicUrl + '/rss.xml',
       vkontakte: '',
       linkedin: '#',
       instagram: '#',
