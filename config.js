@@ -1,7 +1,9 @@
 'use strict';
 
+const publicUrl = 'https://iruwl.github.io';
+
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: publicUrl,
   pathPrefix: '/',
   title: 'Blog by John Doe',
   subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
