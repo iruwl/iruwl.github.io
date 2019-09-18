@@ -8,7 +8,7 @@
     "build": "yarn run clean && gatsby build",
     "start": "gatsby serve -p 9001",
     "startbuild": "yarn run clean && gatsby build && gatsby serve -p 9001",
-    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "yarn run clean && gatsby build && gh-pages -d public -b master",
     "clean": "rimraf .cache public",
     "flow": "flow",
     "lint:js": "eslint --cache --ext .js,.jsx .",
