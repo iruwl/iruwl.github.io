@@ -27,6 +27,12 @@ const createPages = async ({ graphql, actions }) => {
     component: path.resolve('./src/templates/categories-list-template.js')
   });
 
+  // Nawala
+  createPage({
+    path: '/nawala',
+    component: path.resolve('./src/templates/nawala-template.js')
+  });
+
   // Posts and pages from markdown
   const result = await graphql(`
     {
