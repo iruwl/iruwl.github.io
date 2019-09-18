@@ -9,8 +9,8 @@ module.exports = {
   subtitle: 'Dump and die developer. Was born in legacy code.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  postsPerPage: 2,
+  googleAnalyticsId: 'UA-93479886-2',
   useKatex: false,
   menu: [
     {
