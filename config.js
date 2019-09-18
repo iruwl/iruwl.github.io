@@ -6,7 +6,7 @@ module.exports = {
   url: publicUrl,
   pathPrefix: '/',
   title: 'Catetan iRul',
-  subtitle: 'Dump and die developer. Was born in legacy code.',
+  subtitle: "[Dump and die developer]'s notes.",
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 2,
