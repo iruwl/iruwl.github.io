@@ -12,15 +12,16 @@ const CategoriesListTemplate = () => {
   const categories = useCategoriesList();
 
   return (
-    <Layout title={`Categories - ${title}`} description={subtitle}>
+    <Layout title={`Kategori - ${title}`} description={subtitle}>
       <Sidebar />
-      <Page title="Categories">
+      <Page title="Kategori">
         <ul>
           {categories.map((category) => (
             <li key={category.fieldValue}>
               <Link to={`/kategori/${kebabCase(category.fieldValue)}/`}>
-                {category.fieldValue} ({category.totalCount})
+                {category.fieldValue}
               </Link>
+              &nbsp;<span style={{'color':'#a6a6a6'}}>({category.totalCount})</span>
             </li>
           ))}
         </ul>
