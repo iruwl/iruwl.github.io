@@ -17,6 +17,9 @@ module.exports = {
       label: 'Articles',
       path: '/'
     }, {
+      label: 'Kintaka',
+      path: '/kintaka'
+    }, {
       label: 'Kategori',
       path: '/kategori'
     }, {
