@@ -27,12 +27,12 @@ const TagTemplate = ({ data, pageContext }: Props) => {
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
+  const pageTitle = currentPage > 0 ? `Catetan berlabel "${tag}" - Halaman ${currentPage} - ${siteTitle}` : `Catetan berlabel "${tag}" - ${siteTitle}`;
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
       <Sidebar />
-      <Page title={tag}>
+      <Page title={`Catetan berlabel "${tag}"`}>
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}

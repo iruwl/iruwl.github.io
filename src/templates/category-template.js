@@ -27,12 +27,12 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
+  const pageTitle = currentPage > 0 ? `Catetan dengan kategori "${category}" - Halaman ${currentPage} - ${siteTitle}` : `Catetan dengan kategori "${category}" - ${siteTitle}`;
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
       <Sidebar />
-      <Page title={category}>
+      <Page title={`Catetan dengan kategori "${category}"`}>
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}
