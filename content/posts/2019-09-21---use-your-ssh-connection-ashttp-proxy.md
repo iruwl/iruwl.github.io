@@ -1,5 +1,5 @@
 ---
-title: Use your SSH connection as HTTP proxy
+title: Use Your SSH Connection as HTTP Proxy
 date: "2019-09-21"
 template: "post"
 draft: false
@@ -25,7 +25,7 @@ ssh -D 7070 -p22 user@your-server.com
 
 The option "-D" opens a SOCKS port and tunnels it to the machine you are connected to.
 
-### How can i use it?
+### How can I use it?
 
 Go to the settings in your browser and look for proxy settings. Set as proxy server (Socks 5): 127.0.0.1 and port the port you defined with option "-D", 7070 in above example.
 
