@@ -40,6 +40,9 @@ module.exports = {
       label: 'Kentang',
       // path: '/pages/kentang'
       path: '/kentang'
+    }, {
+      label: 'Sesuatu yang akan dilakukan',
+      path: '/todo'
     }
   ],
   author: {
