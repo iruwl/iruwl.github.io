@@ -1,4 +1,213 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Catetan iRul]]></title><description><![CDATA[[Dump and die developer]'s notes.]]></description><link>https://iruwl.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 24 Oct 2019 13:46:36 GMT</lastBuildDate><item><title><![CDATA[Install Elasticsearch 7.0.0 on Ubuntu 18.04]]></title><description><![CDATA[Elasticsearch is an open source distributed full-text search and analytics engine. It supports RESTful operations and allows you to store, search, and analyze big volumes of data in real time.]]></description><link>https://iruwl.github.io/catetan/install-elasticsearch-7.0.0-on-ubuntu-18.04/</link><guid isPermaLink="false">https://iruwl.github.io/catetan/install-elasticsearch-7.0.0-on-ubuntu-18.04/</guid><pubDate>Thu, 24 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;overview&quot;&gt;&lt;a href=&quot;#overview&quot; aria-label=&quot;overview permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Catetan iRul]]></title><description><![CDATA[[Dump and die developer]'s notes.]]></description><link>https://iruwl.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 24 Oct 2019 17:03:21 GMT</lastBuildDate><item><title><![CDATA[JSON Transformation with Jolt]]></title><description><![CDATA[Jolt is a Java based “JSON to JSON” transformation library. However, the fact that it is Java based is irrelevant to us as transformations aren’t done in Java, but rather in Jolt’s own transformation definition format. This is the main purpose of Jolt: To be able to transform JSON without being bound to a language other than JSON. Although if Jolt’s built-in transformation operations aren’t enough for your purposes, it’s easy to extend them using the Java library.]]></description><link>https://iruwl.github.io/catetan/json-transformation-with-jolt/</link><guid isPermaLink="false">https://iruwl.github.io/catetan/json-transformation-with-jolt/</guid><pubDate>Fri, 25 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;what-is-jolt&quot;&gt;&lt;a href=&quot;#what-is-jolt&quot; aria-label=&quot;what is jolt permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Jolt&lt;/h2&gt;
+&lt;p&gt;Jolt is a Java based “JSON to JSON” transformation library. However, the fact that it is Java based is irrelevant to us as transformations aren’t done in Java, but rather in Jolt’s own transformation definition format. This is the main purpose of Jolt: To be able to transform JSON without being bound to a language other than JSON. Although if Jolt’s built-in transformation operations aren’t enough for your purposes, it’s easy to extend them using the Java library. [&lt;a href=&quot;https://apinizer.com/json-transformation-with-jolt/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;source&lt;/a&gt;]&lt;/p&gt;
+&lt;h2 id=&quot;jolt-specification&quot;&gt;&lt;a href=&quot;#jolt-specification&quot; aria-label=&quot;jolt specification permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jolt Specification&lt;/h2&gt;
+&lt;p&gt;A &lt;strong&gt;Jolt Specification&lt;/strong&gt; is a JSON structure that contains two root elements: operation (string): &lt;strong&gt;shift, sort, cardinality, modify-default-beta, modify-overwrite-beta, modify-define-beta, or remove&lt;/strong&gt;. spec (JSON): A set of key/value pairs of the form {“input-side search”: “output-side transformation”}. [&lt;a href=&quot;https://community.cloudera.com/t5/Community-Articles/Jolt-quick-reference-for-Nifi-Jolt-Processors/ta-p/244350&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;source&lt;/a&gt;]&lt;/p&gt;
+&lt;h2 id=&quot;awal-mula&quot;&gt;&lt;a href=&quot;#awal-mula&quot; aria-label=&quot;awal mula permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Awal mula&lt;/h2&gt;
+&lt;p&gt;Singkat cerita saya sedang mencoba API Gateway &lt;a href=&quot;https://gravitee.io/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Gravitee&lt;/a&gt;. Pada menu &lt;em&gt;Design&lt;/em&gt; terdapat &lt;em&gt;JSON to JSON Transformation Gravitee Policy&lt;/em&gt; yang mana merupakan sebuah fungsi untuk merubah (override) konten JSON dari suatu request atau response ke bentuk JSON yang lain (diinginkan).&lt;/p&gt;
+&lt;p&gt;Nah. Untuk merubah bentuk JSON ke bentuk JSON yang lain, fungsi tersebut di atas menggunakan &lt;strong&gt;JOLT specification&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;contoh-implementasi&quot;&gt;&lt;a href=&quot;#contoh-implementasi&quot; aria-label=&quot;contoh implementasi permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contoh implementasi&lt;/h2&gt;
+&lt;p&gt;Untuk memudahkan dalam mencoba atau bereksperimen dengan JOLT specification ini silahkan buka &lt;a href=&quot;&quot;&gt;https://jolt-demo.appspot.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Misalkan berikut ini adalah response JSON yang saya dapat dari suatu API (anggap ini sebagai JSON Input):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;jsonrpc&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;2.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Data Submitted&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;code&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;params&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;data&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;produk&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Kopi Liong&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;harga&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1500&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Tapi saya menginginkan (JSON Output) format JSON yang lebih sederhana, misalkan sebagai berikut:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token property&quot;&gt;&quot;produk&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Kopi Liong&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+   &lt;span class=&quot;token property&quot;&gt;&quot;harga&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1500&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Maka JSON specification-nya adalah sebagai berikut:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;operation&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;shift&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;spec&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token property&quot;&gt;&quot;params&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;data&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;token property&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;amp;&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e35575d613b55a822e3174bbb181c4b9/1002f/jolt-spec-01.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.06317411402157%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABCElEQVQY03VPy3aEIBTz///RU/V4BukICBcBeTZoF11Ms+ARkpswaG2EksIIKZUQwhijtfYhxpzLjZyzd/60lshqOoVUuxDqUPY8BynFNH2N4zgv87Is67rO0zStnIuDiJzz8NcbKSWMaq1iHK44D8hhjPHtG7H2pB7r/bYxzl+cb4c+wFhrsa7ri29vzt+Mbfu+O+eGGIOSkUyJoaZY75EFD6SrdzVdnWmtheAPmYiSc+UmGvKHlIKWhbMUYwm+szBfl6ej7Rw9S7uBzk9bnJ+1mzEyxqRVsTaHgNhuRnMovOv6rm4fANkAXULqVbHnUh8WtZH0JPyHXzPwl8WviQxCn4YPPpp/AEfC0CBiS4shAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/e35575d613b55a822e3174bbb181c4b9/01472/jolt-spec-01.webp 240w,
+/static/e35575d613b55a822e3174bbb181c4b9/222bd/jolt-spec-01.webp 480w,
+/static/e35575d613b55a822e3174bbb181c4b9/620b9/jolt-spec-01.webp 960w,
+/static/e35575d613b55a822e3174bbb181c4b9/29e9a/jolt-spec-01.webp 1298w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/e35575d613b55a822e3174bbb181c4b9/0783d/jolt-spec-01.png 240w,
+/static/e35575d613b55a822e3174bbb181c4b9/782f4/jolt-spec-01.png 480w,
+/static/e35575d613b55a822e3174bbb181c4b9/f570d/jolt-spec-01.png 960w,
+/static/e35575d613b55a822e3174bbb181c4b9/1002f/jolt-spec-01.png 1298w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/e35575d613b55a822e3174bbb181c4b9/f570d/jolt-spec-01.png&quot;
+          alt=&quot;jolt-spec-01.png&quot;
+          title=&quot;jolt-spec-01.png&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Kemudian, misalkan dari  response JSON yang saya dapat dari suatu API di atas berubah bentuk menjadi:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;jsonrpc&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;2.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;id&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Data Not Found!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;code&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;404&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Maka dengan JOLT specification di atas apa output yang dihasilkan? Outputnya adalah &lt;code class=&quot;language-text&quot;&gt;null&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a25d1fcb91c9b56fff074ad10050a420/dde78/jolt-spec-02.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 41.55744024672321%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAAA6ElEQVQY031Q2Y7DIBDj//8x2kTbKtAGwhUIDMe6ZN+q1kIjZmR7Dmatk0pKK3e1Symdc9baMxGV2gZqq+lMwR/Oe+O8Uho0rfVxBKaUmpd5mqZlWX4Hlnn+uXEhNXxCCHUAJkS5ltIqPjRqhVlj1pVzIeDnvTPGxBgFX4XA4+iAikdPo++3++P53LaNc44IX0aUtCJras6NCGN2eELvTIuxUe7X8FijlNr7K+0DyFnKp7N53+mM7Yz9EqcUvemPNYMxBP0doLEyMNJ/CrzR+RVDwXbfxO9V3Ab7XFfpn/FJ3HCh78pL/AdoqNGlI8sj5QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/a25d1fcb91c9b56fff074ad10050a420/01472/jolt-spec-02.webp 240w,
+/static/a25d1fcb91c9b56fff074ad10050a420/222bd/jolt-spec-02.webp 480w,
+/static/a25d1fcb91c9b56fff074ad10050a420/620b9/jolt-spec-02.webp 960w,
+/static/a25d1fcb91c9b56fff074ad10050a420/fd8b4/jolt-spec-02.webp 1297w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/a25d1fcb91c9b56fff074ad10050a420/0783d/jolt-spec-02.png 240w,
+/static/a25d1fcb91c9b56fff074ad10050a420/782f4/jolt-spec-02.png 480w,
+/static/a25d1fcb91c9b56fff074ad10050a420/f570d/jolt-spec-02.png 960w,
+/static/a25d1fcb91c9b56fff074ad10050a420/dde78/jolt-spec-02.png 1297w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/a25d1fcb91c9b56fff074ad10050a420/f570d/jolt-spec-02.png&quot;
+          alt=&quot;jolt-spec-02.png&quot;
+          title=&quot;jolt-spec-02.png&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Tapi bagaimana jika saya ingin (misalkan) mendapatkan pesan error-nya? Apakah bisa? Jawabnnya adalah: bisa! Gunakan JOLT specification berikut:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;operation&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;shift&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;spec&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token property&quot;&gt;&quot;params&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;data&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;token property&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;amp;&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token property&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;error&quot;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dc1e64582209f27ec596457bc6f48a36/1002f/jolt-spec-03.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 46.61016949152542%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABAklEQVQoz5VP2W7DIBD0//9jGrdybZwAZjkNy5GF9iGqokidByRm59idtDZSSQFcioMLAVoD6HCmhLmUknNBzMEHa6wxFowTsssOdVjnJinFfL1+XC5fA8uyfM7zvOw3AdZa70Mp9Qc5Y62ltUaR9KXoCQDWbd33nXNO6QCKena2MUYkU+pQSlEKyZblm7EbY/d13e6cO++mlM5DJA05xjqie2QIwUANvmDsndRGjHcpxeZtxUREQ8QpxmBUOiSeoZyhkZLMg2z8hmXs2Vcd27cn9LWxY0S13xmJqIfe02e67mnS/ppfsmSOMaeY6yvbO/NodnSwgYz4f7O1jmbtLUjwAJrEDInMj+ViAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/dc1e64582209f27ec596457bc6f48a36/01472/jolt-spec-03.webp 240w,
+/static/dc1e64582209f27ec596457bc6f48a36/222bd/jolt-spec-03.webp 480w,
+/static/dc1e64582209f27ec596457bc6f48a36/620b9/jolt-spec-03.webp 960w,
+/static/dc1e64582209f27ec596457bc6f48a36/29e9a/jolt-spec-03.webp 1298w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/dc1e64582209f27ec596457bc6f48a36/0783d/jolt-spec-03.png 240w,
+/static/dc1e64582209f27ec596457bc6f48a36/782f4/jolt-spec-03.png 480w,
+/static/dc1e64582209f27ec596457bc6f48a36/f570d/jolt-spec-03.png 960w,
+/static/dc1e64582209f27ec596457bc6f48a36/1002f/jolt-spec-03.png 1298w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/dc1e64582209f27ec596457bc6f48a36/f570d/jolt-spec-03.png&quot;
+          alt=&quot;jolt-spec-03.png&quot;
+          title=&quot;jolt-spec-03.png&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;&lt;em&gt;Source:&lt;/em&gt;&lt;/u&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;https://apinizer.com/json-transformation-with-jolt/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;&quot;&gt;https://community.cloudera.com/t5/Community-Articles/Jolt-quick-reference-for-Nifi-Jolt-Processors/ta-p/244350&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jolt-demo.appspot.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Jolt Transform Demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Install Elasticsearch 7.0.0 on Ubuntu 18.04]]></title><description><![CDATA[Elasticsearch is an open source distributed full-text search and analytics engine. It supports RESTful operations and allows you to store, search, and analyze big volumes of data in real time.]]></description><link>https://iruwl.github.io/catetan/install-elasticsearch-7.0.0-on-ubuntu-18.04/</link><guid isPermaLink="false">https://iruwl.github.io/catetan/install-elasticsearch-7.0.0-on-ubuntu-18.04/</guid><pubDate>Thu, 24 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;overview&quot;&gt;&lt;a href=&quot;#overview&quot; aria-label=&quot;overview permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Elasticsearch is an open source distributed full-text search and analytics engine. It supports RESTful operations and allows you to store, search, and analyze big volumes of data in real time.&lt;/p&gt;
 &lt;p&gt;Elasticsearch is one of the most popular search engines powering applications that have complex search requirements such as big e-commerce stores and analytic applications.&lt;/p&gt;
 &lt;h2 id=&quot;install-openjdk-8&quot;&gt;&lt;a href=&quot;#install-openjdk-8&quot; aria-label=&quot;install openjdk 8 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install OpenJDK 8&lt;/h2&gt;

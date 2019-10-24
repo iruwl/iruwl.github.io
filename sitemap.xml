@@ -5,17 +5,22 @@
 <url> <loc>https://iruwl.github.io/kintaka</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/nawala</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/alat-tempur/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://iruwl.github.io/kentang/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/catetan/rasmus-lerdorf/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/catetan/fungsi-row-to-json-postgresql/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/catetan/use-ssh-as-http-proxy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://iruwl.github.io/catetan/linus-torvalds/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/catetan/install-elasticsearch-7.0.0-on-ubuntu-18.04/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/catetan/install-mongodb-community-edition-on-ubuntu-18.04/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://iruwl.github.io/kentang/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://iruwl.github.io/catetan/json-transformation-with-jolt/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/todo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://iruwl.github.io/catetan/linus-torvalds/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/label/browser</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/label/elasticsearch-7-0-0</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/label/http-proxy</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://iruwl.github.io/label/json</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://iruwl.github.io/label/java</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://iruwl.github.io/label/jolt-specification</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://iruwl.github.io/label/jolt-transformation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/label/linus-torvalds</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/label/linux</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/label/mongo-db-4-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -31,8 +36,10 @@
 <url> <loc>https://iruwl.github.io/kategori/database</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/kategori/database/halaman/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/kategori/jaringan-komputer</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://iruwl.github.io/kategori/library</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/kategori/orang</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/halaman/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://iruwl.github.io/halaman/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://iruwl.github.io/halaman/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
