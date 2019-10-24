@@ -141,8 +141,6 @@ You should see something similar to this:
 }
 ```
 
-It will take 5-10 seconds for the service to start. If you see curl: (7) Failed to connect to localhost port 9200: Connection refused, wait for a few seconds and try again.
-
 If you want to see the messages logged by the Elasticsearch service you can use the command below:
 
 ```console
