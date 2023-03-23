@@ -5,7 +5,7 @@ const publicUrl = 'https://iruwl.github.io';
 module.exports = {
   url: publicUrl,
   pathPrefix: '/',
-  title: 'Catetan iRul',
+  title: 'catetan iruwl',
   subtitle: "[Dump and die developer]'s notes.",
   copyright: '© All rights reserved.',
   disqusShortname: '',
@@ -46,7 +46,7 @@ module.exports = {
     }
   ],
   author: {
-    name: 'iRul',
+    name: 'iruwl',
     photo: '/photo.jpg',
     bio: 'Seorang suami, ayah dari bocil-bocil; suka bermalas-malasan di depan laptop sambil ditemenin kopi sama pisang goreng (kalo lagi ada)',
     contacts: {

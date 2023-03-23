@@ -15,7 +15,7 @@ const Author = () => {
         "Hail Dump and Die Developer"
         <a
           className={styles['author__bio-twitter']}
-          href="https://ko-fi.com/irul99"
+          href="https://ko-fi.com/iruwl"
           rel="noopener noreferrer"
           target="_blank"
         >
