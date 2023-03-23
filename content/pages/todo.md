@@ -6,6 +6,7 @@ slug: "/todo/"
 
 Daftar hal-hal yang akan dilakukan/dipelajari/diimplementasikan bahkan dilupakan.
 
+- **menulis** - Dan benar saja ini terlupakan
 - **nodemon** [__](https://github.com/remy/nodemon/)
 - **pm2** [__](https://github.com/Unitech/pm2)
 - **Supervisor** [__](http://supervisord.org/introduction.html)
